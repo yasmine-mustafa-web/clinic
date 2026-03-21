@@ -1,0 +1,893 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #03045e;
+  --white: #fff;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+    overflow-x: hidden;
+
+}
+.btnToggle{
+    display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px;
+  position: sticky;
+  background: var(--white);
+  align-items: center;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+.headerLeft span {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.headerLeft img {
+  max-width: 100px;
+}
+.headerRight p {
+  display: none;
+}
+.heroRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.headerRight a {
+  text-decoration: none;
+  color: #000;
+}
+.headerRight ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.headerRight li {
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+section {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    var(--main-color) 50%,
+    var(--white) 50%
+  );
+}
+.HERO {
+  padding: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4);
+  width: 80%;
+  margin: 30px;
+  border-radius: 10px;
+  font-family: "Marmelad", sans-serif;
+}
+.img {
+  background-color: rgb(27, 27, 136);
+  border-radius: 50%;
+  overflow: hidden;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--main-color);
+}
+.heroRight img {
+width: 350px;
+  height: 350px;
+}
+.heroLeft h1 {
+  font-family: "Marmelad", sans-serif;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.heroLeft {
+  margin-left: 120px;
+  font-family: "Marmelad", sans-serif;
+}
+.heroLeft p {
+  font-family: "montserrat", sans-serif;
+}
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 9000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+textarea{
+  font-size: 15px;
+}
+.modalContent{
+background-color: var(--white);
+margin: 10% auto;
+padding: 20px;
+width: 90%;
+max-width: 400px;
+border-radius: 10px;
+position: relative;
+}
+.close{
+  position: absolute;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.modalContent h2{
+  text-align: center;
+}
+#appointmentForm{
+  text-align: center;
+}
+#appointmentForm input{
+  border-radius: 10px;
+  border: 1px solid var(--main-color);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+#appointmentForm button{
+    border-radius: 10px;
+  border: 1px solid var(--main-color);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.horizontal-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* عشان يبدأ من الشمال تحت الكلمة */
+  margin: 15px 0;
+  color: var(--main-color);
+}
+
+.horizontal-line::before {
+  content: "🩺";
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.horizontal-line::after {
+  content: "";
+  height: 2px; /* تخانة الخط */
+  width: 150px; /* طول الخط */
+  background: linear-gradient(
+    to right,
+    var(--main-color),
+    transparent
+  ); /* خط بيبدأ تقيل وبيختفي (Fade) */
+  display: inline-block;
+}
+.btnsHolder {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 90px;
+}
+.heroBtn {
+  padding: 10px 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 15px;
+  background: transparent;
+  font-size: 15px;
+  font-family: "Marmelad", sans-serif;
+  font-weight: 250;
+}
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  transform: scale(1.03);
+}
+
+.heroBtn:first-child {
+  background: var(--main-color);
+  color: var(--white);
+}
+
+.heroBtn:last-child {
+  background: transparent;
+  color: var(--main-color);
+  text-decoration: none;
+}
+.heroBtn a:last-child{
+    text-decoration: none;
+
+}
+main {
+  display: flex;
+  justify-content: center;
+  font-family: "Marmelad", sans-serif;
+  padding: 80px 0px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.mainRight h2 {
+  font-size: 25px;
+  flex-wrap: wrap;
+}
+.mainLeft img {
+  width: 420px;
+  border-radius: 20px;
+  border: 2px solid var(--main-color);
+}
+.mainRight .breif {
+  text-align: justify;
+  font-family: "montserrat", sans-serif;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.iconHolder {
+  font-family: "poppins", sans-serif;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+.iconHolder i {
+  color: var(--main-color);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.iconHoldersec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+}
+.iconsec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 30px rgba(11, 45, 236, 0.4);
+
+  font-family: "montserrat", sans-serif;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.sliderContainer {
+  padding: 40px;
+}
+.sliderContainer h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+ 
+}
+.horizontal{
+  text-align: center;
+  background-color: #000;
+  width: 160px;
+  height: 1px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.testimonialCard {
+  padding: 30px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  margin: 0px auto;
+  text-align: center;
+  background: #fff;
+  direction: rtl;
+  border-radius: 15px;
+}
+#reviewText {
+  font-size: 1.2rem;
+  color: #555;
+  font-style: italic;
+  max-height: 80px;
+}
+.controls button {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.iconsec i {
+  font-size: 20px;
+  color: var(--main-color);
+  margin-bottom: 0;
+}
+.iconsec p {
+  display: flex;
+  font-size: 13px;
+      text-align: center;
+
+}
+.iconsec:hover {
+  transform: scale(1.03);
+}
+article h2 {
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.hr {
+  width: 60px;
+  height: 1px;
+  background-color: var(--main-color);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.holds {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  font-family: "Marmelad", sans-serif;
+}
+.holds img {
+  width: 300px;
+}
+.moh,
+.mar {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.moh p {
+  text-align: justify;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+.moh img,
+.mar img {
+  justify-content: center;
+  margin: 0 auto;
+}
+.vr {
+  height: 85vh;
+  width: 1px;
+  vertical-align: middle;
+  background-color: var(--main-color);
+  margin: 100px 20px 20px 0px;
+  text-align: center;
+}
+.mar ul {
+  text-align: justify;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.sc , .scMar {
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: solid 2px var(--main-color);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+  align-items: center;
+}
+.contactSection {
+  justify-content: center;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.form input {
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border: 2px solid var(--main-color);
+}
+.form h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+.form span {
+  color: var(--main-color);
+}
+.submit {
+  width: 50%;
+  padding: 8px 10px;
+  border-radius: 15px;
+  border: solid 2px var(--main-color);
+  background: transparent;
+  justify-content: center;
+  margin: 0 auto;
+}
+textarea {
+  margin-bottom: 30px;
+  border: 2px solid var(--main-color);
+}
+.social {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.socialIT {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 10px 15px;
+  align-items: center;
+  border: 1px solid var(--main-color);
+  font-family: "montserrat", sans-serif;
+}
+.socialIT i {
+  font-size: 24px;
+  margin-left: 8px;
+  margin-bottom: 0;
+color: var(--main-color);
+} 
+.socialIT span{
+  padding-bottom: 0;
+}
+footer {
+  background: var(--main-color);
+  color: var(--white);
+  margin-top: 40px;
+}
+.footerHolder {
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  padding: 40px 40px 0px 40px;
+  background-color: var(--main-color);
+  color: var(--white);
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.first h2 {
+  font-family: "Marmelad", sans-serif;
+}
+#blog {
+  scroll-margin-top: 190px;
+}
+.first p {
+  font-family: "montserrat", sans-serif;
+}
+.navsdown h3 {
+  font-family: "montserrat", sans-serif;
+}
+.navsdown ul {
+  list-style: none;
+  text-align: center;
+  align-items: center;
+}
+.navsdown li {
+  font-family: "Poppins", sans-serif;
+      transition: all 0.3s ease;
+
+}
+  .navsdown a {
+    text-decoration: none;
+    color: var(--white);
+    margin-right: 30px;
+  }
+  .navsdown li:hover {
+    transform: scale(1.03);
+  }
+.contactF h3 {
+  font-family: "montserrat", sans-serif;
+}
+.contactF ul {
+  list-style: none;
+}
+.contactF li {
+  font-family: "Poppins", sans-serif;
+}
+.theEnd {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.theEnd a {
+  font-weight: bold;
+  color: var(--white);
+}
+.horiz{
+    display: none;
+}
+.scheduleContainer , .scheduleContainerMar {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+display: none;
+position: fixed;
+height: 100%;
+z-index: 2000;
+left: 0;
+top: 0;
+}
+.scheduleContent , .scheduleContentMar{
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  margin: 10% auto;
+  padding: 50px;
+position: relative;
+border-radius: 10px;
+max-width: 500px;
+background-color: var(--white);
+
+}
+.scheduleContent h2 ,.scheduleContentMar  h2{
+  font-size: 23px;
+}
+.scheduleContent i , .scheduleContentMar i{
+  margin-right: 8px;
+
+}
+
+.daysList{
+  margin-top: 20px;
+}
+.daysList p{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+.dayRow{
+  justify-content: space-between;
+  display: flex;
+  text-align: justify;
+    font-family: "Marmelad", sans-serif;
+margin-bottom: 9px;
+padding: 15px;
+border-bottom: solid 1px black;
+}
+.dayRow:last-child{
+  border-bottom: none;
+}
+.dayRow span{
+      font-family: "Marmelad", sans-serif;
+
+}
+.off{
+  color: rgb(197, 66, 66);
+}
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+input[type="datetime-local"]:focus {
+    border-color: #007bff; /* أو لون البراند بتاعك */
+}
+@media (max-width: 768px) {
+  #menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    order: 1;
+    display: none;
+position: absolute;
+left: 5px;
+border-radius: 5px;
+padding: 30px 25px;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+background-color: rgba(209, 209, 209, 0.801);
+font-size: 17px;
+  }
+
+  .horiz{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+  }
+  .btnToggle{
+    background: transparent;
+    border: none;
+display: block;
+font-size: 20px;
+  }
+  .headerLeft {
+    text-align: right;
+    order: 2;
+  }
+  .headerRight li{
+    padding: 10px 0px;
+  }
+  .headerRight a{
+    color: #000;
+  }
+    .headerRight li:hover{
+        background-color: #13111150;
+    }
+  #menu.open {
+    display: block;
+  }
+  .headerRight p {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .headerLeft img {
+    width: 90px;
+  }
+  header {
+    justify-content: space-between;
+  }
+  section {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  .HERO {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    width: 90%;
+  }
+  .heroLeft {
+    order: 2;
+    padding: 20px;
+    margin-left: 0;
+  }
+  .heroRight {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .heroRight .img {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+  }
+  .heroRight img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+ 
+  main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .mainLeft {
+    order: 2;
+  }
+  .mainRight {
+    order: 1;
+    flex-wrap: wrap;
+  }
+  .sc, .scMar{
+    padding: 5px;
+font-size: 13px;
+  }
+  .mainRight h2 {
+    font-size: clamp(20px, 4vw, 35px);
+    padding: 0;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+  }
+  .mainRight p {
+    flex-wrap: wrap;
+  }
+  .iconHolder {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .iconHoldersec {
+    margin: 20px 0;
+    gap: 20px;
+  }
+  .iconsec p {
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+  }
+  .iconsec i {
+    font-size: 20px;
+  }
+  .iconsec {
+    padding: 20px;
+    margin-top: 0;
+    align-items: center;
+  }
+  .mainLeft img {
+    width: 80%;
+  }
+  .holds {
+    flex-direction: column;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+  }
+  .holds img{
+    width: 180px;
+    margin: 0 auto;
+    justify-content: center;
+  
+  }
+  .vr {
+    height: 1px;
+    width: 100%;
+    order: 2;
+  }
+  .moh {
+    order: 1;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .moh p {
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .moh img {
+    margin: 0 auto;
+  }
+  .mar {
+    order: 3;
+  }
+  .mar ul {
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 0px;
+  }
+  .form input {
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+  }
+  .footerHolder {
+    flex-direction: column;
+    display: flex;
+  }
+  .theEnd p {
+    font-size: 18px;
+  }
+.social {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.socialIT {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 8px 10px;
+  align-items: center;
+  border: 1px solid var(--main-color);
+  font-family: "montserrat", sans-serif;
+}
+.socialIT i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+.socialIT span{
+  font-size: 15px;
+}
+.scheduleContainer , .scheduleContainerMar{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+display: none;
+position: fixed;
+height: 100%;
+z-index: 2000;
+left: 0;
+top: 0;
+}
+.scheduleContent , .scheduleContentMar{
+  width: 90%;
+  text-align: center;
+  justify-content: center;
+  margin: 10% auto;
+  padding: 50px;
+position: relative;
+border-radius: 10px;
+max-width: 500px;
+background-color: var(--white);
+
+}
+.scheduleContent h2 , .scheduleContentMar h2{
+  font-size: 18px;
+}
+.scheduleContent  i , .scheduleContentMar  i{
+  margin-right: 8px;
+
+}
+.daysList{
+  margin-top: 20px;
+}
+.daysList p{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+.dayRow{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+    font-family: "Marmelad", sans-serif;
+margin-bottom: 9px;
+gap: 5px;
+padding: 15px;
+border-bottom: solid 1px black;
+}
+.dayRow:last-child{
+  border-bottom: none;
+}
+.dayRow span{
+      font-family: "Marmelad", sans-serif;
+
+}
+.off{
+  color: rgb(197, 66, 66);
+}
+}

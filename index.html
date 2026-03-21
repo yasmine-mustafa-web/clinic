@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marmelad&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"
+    >
+    <title>CLINIC</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerLeft">
+    <a href="./index.html">    <img src="./assets/Gemini_Generated_Image_3py4qr3py4qr3py4-removebg-preview.png" /></a>
+      <span>&#38;</span>  <a href="./index.html"> <img src="./assets/Gemini_Generated_Image_85x3gv85x3gv85x3-removebg-preview.png" />
+      </div></a> 	
+      <div class="headerRight">
+        <button class="btnToggle" onclick="toggleMenu()">&#9776;</button>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <div class="horiz"></div>
+          <li><a href="#about">About</a></li>
+                    <div class="horiz"></div>
+
+          <li><a href="#doctors">Doctors</a></li>
+                    <div class="horiz"></div>
+
+          <li><a href="#blog">Reviews</a></li>
+                    <div class="horiz"></div>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <section id="home">
+        <div class="HERO">
+        <div class="heroLeft">
+            <h1>Said Clinic</h1>
+            <div class="horizontal-line"></div>
+            <h3>Making Health Care Better Together</h3>
+            <p>Your Health, Our Priority.</p>
+            <div class="btnsHolder">
+                    <button class="heroBtn" onclick="openModal()">Book Now</button>
+                    <div id="bookingModal" class="modal">
+                        <div class="modalContent">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h2>Book An Appointment</h2>
+                            <form id="appointmentForm">
+                                <input type="text" id="userName" placeholder="Your Name" required>
+      <input type="tel" id="userPhone" placeholder="Phone Number" required><br>
+      <label for="appointmentTime" style="display:block; margin:10px 0px; font-size:14px; color:#666;">Choose Date & Time:</label>
+            <input type="datetime-local" id="appointmentTime" required><br>
+      <button type="submit">Submit Data</button>
+
+                            </form>
+                        </div>
+                    </div>
+                    <a href="#blog">    <button  class="heroBtn">See Reviews</button></a>
+            </div>
+        
+
+        </div>
+        <div class="heroRight">
+            <div class="img">
+                                        <img src="./assets/Gemini_Generated_Image_o5bxsho5bxsho5bx-removebg-preview.png">
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <hr>
+    <main id="about">
+        <div class="mainLeft">
+            <img src="./assets/5242127.jpg">
+        </div>
+                <div class="mainRight">
+                    <h2>Best Medical Care For You And Your Family</h2>
+                <p class="breif">Led by Dr. Mohamed Said, Consultant of Gastroenterology, and <br> Dr. Marwa Said, Specialist in Dermatology. Visit us at our <br> Sidi Bishr and Siouff branches for world-class medical excellence.</p>
+                <div class="iconHolder">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Sidi Bishr: 33 El-Eisawy Main Street,<br> at the intersection with Mahmoud Sedky Street, above Sarougy. </span>
+
+                </div>
+                                     <div class="iconHolder">
+                                        <i class="fa-solid fa-phone"></i>
+                    <span>+201030700219 </span>
+                    
+                </div>
+                                     <div class="iconHolder">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>El-Siouf: Gamila Bouherid Street,<br> next to Mobil Gas Station and El-Haram Market – Alexandria, Egypt, 21500.</span>
+                    
+                </div>
+
+                                <div class="iconHolder">
+                                    <i class="fa-solid fa-phone"></i>
+                    <span>+201270582604   /  +2001104315938</span>
+                    
+                </div>
+    
+                </div>
+            <div class="iconHoldersec">
+                <div class="iconsec">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <p>Excellence</p>
+                </div>
+                <div class="iconsec">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <p>Advanced Equipments</p>
+                </div>
+                <div class="iconsec">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Punctuality</p>
+                </div>
+                <div class="iconsec">
+                    <i class="fa-brands fa-gratipay"></i>
+                    <p>Support</p>
+                </div>
+                </div>
+    </main>
+    <hr>
+    <article id="doctors" >
+        <h2>Doctors</h2>
+        <div class="hr"></div>
+        <div class="holds">
+                    <div class="moh">
+            <img src="./assets/Gemini_Generated_Image_85x3gv85x3gv85x3-removebg-preview.png" alt="">
+        
+            <p>Treatment of internal medicine, diabetes, <br>and diseases of the digestive system and liver;<br> interventional endoscopy of the  gastrointestinal<br> tract and biliary ducts; endoscopic resection of<br>  polyps and tumors; ligationand injection of<br> esophageal and gastric varices; gastric balloon <br>and gastric Botox for weight loss; and therapeutic <br> nutrition</p>
+        <button onclick="openSchedule()" class="sc">Schedule</button>
+
+        </div>
+        <div class="vr"></div>
+        <div class="mar">
+            <img src="./assets/Gemini_Generated_Image_3py4qr3py4qr3py4-removebg-preview.png">
+            <ul>
+            <li>Dermapen and facial rejuvenation plasma sessions;</li><li> Dermapen sessions for treating male pattern baldness;</li><li> Meladeep whitening sessions;</li> <li>skin lightening sessions for dark spots and melasma;</li><li> hair treatment sessions using plasma (PRP) and mesotherapy;</li><li> removal of warts and skin tags;</li><li> chemical peeling; filler and Botox;</li><li> lip fillers and treatment for skin sagging.</li>
+       </ul>
+                <button onclick="openScheduleMar()" class="scMar">Schedule</button>
+
+    </div>
+        
+</div>
+<hr>
+<div id="blog" class="sliderContainer">
+    <h2>What People Say About Us</h2>
+    <div class="horizontal"></div>
+<div class="testimonialCard">
+    <div class="quoteIcon"></div>
+    <p id="review">دكتورة شاطرة جدا و ممتازة</p>
+    <h4 class="nameR">أحمد محمود</h4>
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="controls">
+    <button onclick="prevReview()">next</button>
+        <button onclick="nextReview()"> preview  </button>
+
+</div>
+</div>
+
+</div>
+
+    </artcle>
+    <hr>
+    <div id="contact" class="contactSection">
+            <form class="form">
+        <h2>Keep In <span>Touch</span></h2>
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="Your Gmail"> 
+        <textarea cols="20" rows="10" >
+
+        </textarea>
+        <button  class="submit" type="submit">Submit </button>
+    </form>
+    
+    <div class="social">
+            <div class="socialIT">
+                <span><strong>Dr.Mohamed Said</strong> </span> <br><br>
+    <a href="https://www.facebook.com/drsaidgastroclinic/" target="_blank">  <i class="fa-brands fa-facebook"></i></a>  <br>
+     <a href="https://www.instagram.com/doctormsaid " target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+    </div>
+        <div class="socialIT">
+            <span><strong>Dr.Marwa Said</strong> </span><br>
+      <a href="https://www.facebook.com/marwasaidclinic/" target="_blank"> <i  class="fa-brands fa-facebook"></i></a> 
+     <a href="https://www.instagram.com/dr_marwa_said/" target="_blank">  <i class="fa-brands fa-instagram"></i></a> 
+    </div>
+    </div>
+
+    </div>
+<footer>
+    <div class="footerHolder">
+        <div class="first">
+            <h2>Said Clinc</h2>
+            <p>Your Health , Our Priorty.</p>
+        </div>
+    <div class="navsdown">
+        <h3>Quick Links</h3>
+          <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li><a href="#blog">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="contactF">
+        <h3>Contact:</h3>
+        <ul>
+            <li><strong>SediBeshr:</strong>  +201030700219</li>
+            <li> <strong>Seyof:</strong>  +201270582604-+2001104315938</li>
+        </ul>
+    </div>
+    <div>
+
+    </div>
+
+    </div>
+        <div class="theEnd">  
+          <p>&#169; 2026 , made by <a href="https://www.facebook.com/yasmin.mostafa.5667" target="_blank">Yasmine</a>,by love❤</p>
+</div>
+</footer>
+        <div class="scheduleContainer">
+<div class="scheduleContent">
+<span onclick="closeSchedule()" class="close">&times;</span>
+<h2><i class="fa-regular fa-clock"></i>Working Hours</h2>
+<div class="daysList">
+<div class="dayRow">
+    <span>Saturday - Wednesday</span>
+                <span class="time">04:00 PM - 10:00 PM</span>
+            </div>
+            <div class="dayRow">
+                <span>Thursday</span>
+                <span class="time">10:00 AM - 02:00 PM</span>
+            </div>
+            <div class="dayRow off">
+                <span>Friday</span>
+                <span class="time">Closed (Emergency Only)</span>
+            </div>
+        </div>
+        
+        <p class="note">* Please book in advance to avoid waiting.</p>
+            <button class="heroBtn" onclick="openModal()">Book Now</button>
+                    <div id="bookingModal" class="modal">
+                        <div class="modalContent">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h2>Book An Appointment</h2>
+                            <form id="appointmentForm">
+                                <input type="text" id="userName" placeholder="Your Name" required>
+      <input type="tel" id="userPhone" placeholder="Phone Number" required><br>
+      <button type="submit">Submit Data</button>
+
+                            </form>
+                        </div>
+                    </div>
+    </div>
+</div>
+</div>
+</div>
+        </div>
+         <div class="scheduleContainerMar">
+<div class="scheduleContentMar">
+<span onclick="closeScheduleMar()" class="close">&times;</span>
+<h2><i class="fa-regular fa-clock"></i>Working Hours</h2>
+<div class="daysList">
+<div class="dayRow">
+    <span>Saturday - Wednesday</span>
+                <span class="time">04:00 PM - 10:00 PM</span>
+            </div>
+            <div class="dayRow">
+                <span>Thursday</span>
+                <span class="time">10:00 AM - 02:00 PM</span>
+            </div>
+            <div class="dayRow off">
+                <span>Friday</span>
+                <span class="time">Closed (Emergency Only)</span>
+            </div>
+        </div>
+        
+        <p class="note">* Please book in advance to avoid waiting.</p>
+            <button class="heroBtn" onclick="openModal()">Book Now</button>
+                    <div id="bookingModal" class="modal">
+                        <div class="modalContent">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h2>Book An Appointment</h2>
+                            <form id="appointmentForm">
+                                <input type="text" id="userName" placeholder="Your Name" required>
+      <input type="tel" id="userPhone" placeholder="Phone Number" required><br>
+      <button type="submit">Submit Data</button>
+
+                            </form>
+                        </div>
+                    </div>
+    </div>
+</div>
+</div>
+</div>
+        </div>
+<script src="./app.js"></script>
+  </body>
+</html>
