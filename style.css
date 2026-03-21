@@ -749,7 +749,7 @@ font-size: 13px;
     align-items: center;
   }
   .mainLeft img {
-    width: 80%;
+    width: 280px;
   }
   .holds {
     flex-direction: column;
@@ -760,9 +760,8 @@ font-size: 13px;
   }
   .holds img{
     width: 180px;
-    margin: 0 auto;
     justify-content: center;
-  
+
   }
   .vr {
     height: 1px;
@@ -793,10 +792,21 @@ font-size: 13px;
     line-height: 20px;
     margin-left: 0px;
   }
+  .form{
+    justify-content: center;
+  }
   .form input {
-    width: 100%;
-    padding: 5px;
+    width: 90%;
+    padding: 10px;
     font-size: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  textarea{
+    width: 90%;
+    margin: 0 auto;
+        margin-bottom: 20px;
+
   }
   .footerHolder {
     flex-direction: column;
@@ -889,5 +899,8 @@ border-bottom: solid 1px black;
 }
 .off{
   color: rgb(197, 66, 66);
+}
+.contactSection{
+  padding: 20px;
 }
 }
