@@ -155,7 +155,7 @@ position: relative;
 .horizontal-line {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* عشان يبدأ من الشمال تحت الكلمة */
+  justify-content: flex-start; 
   margin: 15px 0;
   color: var(--main-color);
 }
@@ -398,9 +398,7 @@ article h2 {
   text-align: center;
 }
 .form {
-  display: flex;
   flex-direction: column;
-  width: 390px;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
@@ -601,22 +599,27 @@ input[type="datetime-local"] {
 }
 
 input[type="datetime-local"]:focus {
-    border-color: #007bff; /* أو لون البراند بتاعك */
+    border-color: #007bff; 
 }
 @media (max-width: 768px) {
   #menu {
-    display: flex;
     flex-direction: column;
     text-align: center;
     order: 1;
     display: none;
 position: absolute;
-left: 5px;
-border-radius: 5px;
+border-radius: 0px 5px 5px 0px;
+left: 0;
 padding: 30px 25px;
 box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-background-color: rgba(209, 209, 209, 0.801);
+background-color: rgb(255, 255, 255);
 font-size: 17px;
+height: 100vh;
+width: 60%;
+z-index: 10000;
+top: 0;
+transform: translateX(-100%);
+transition: transform 0.3s ease-in-out;
   }
 
   .horiz{
@@ -646,6 +649,7 @@ font-size: 20px;
     }
   #menu.open {
     display: block;
+    transform: translateX(0);
   }
   .headerRight p {
     display: block;
@@ -794,22 +798,18 @@ font-size: 13px;
     font-size: 13px;
     line-height: 20px;
     margin-left: 0px;
+    margin-right: 20px;
   }
   .form{
-    justify-content: center;
+margin: 0 auto;
   }
   .form input {
-    width: 90%;
     padding: 10px;
     font-size: 15px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    width: 300px;
   }
   textarea{
-    width: 90%;
-    margin: 0 auto;
-        margin-bottom: 20px;
-
+width: 320px;
   }
   .footerHolder {
     flex-direction: column;
