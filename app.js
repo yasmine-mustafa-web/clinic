@@ -41,11 +41,14 @@ function prevReview(){
 }
 setInterval(nextReview,6000);
 const menuBtn=document.querySelector(".btnToggle")
-
+const lis=document.querySelectorAll(".li")
 function toggleMenu(){
 const menu=document.querySelector("#menu");
 menu.classList.toggle("open");
 }
+menu.addEventListener("click" , () => {
+menu.classList.remove("open");
+})
 document.addEventListener("click",(event) =>{
 if (!menu.contains(event.target) && !menuBtn.contains(event.target)){
     menu.classList.remove("open")
