@@ -1,3 +1,10 @@
+const btnDark=document.getElementById("btnToggle2");
+function toggLe(){
+    document.body.classList.toggle("dark");
+}
+
+
+
 const reviews=[{
     name:"كريمة يوسف",text:"دكتورة ممتازة جدا ربنا يباركلها"
 },
