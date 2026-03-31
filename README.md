@@ -15,6 +15,8 @@
 
 🎗 patients' reviews
 
+⌨️ Connection : You can contact them (I am still working on this tho).
+
 ⚙️ Tech Stack:
 Front-end: HTML , CSS AND JavaScript including json
 
