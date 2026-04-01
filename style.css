@@ -26,6 +26,12 @@ body.dark{
 }
 .btnToggle{
     display: none;
+    color: var(--font-color);
+}
+#btnToggle2{
+  background: none;
+  border: none;
+  font-size: 20px;
 }
 header {
   display: flex;
@@ -179,13 +185,13 @@ position: relative;
 
 .horizontal-line::after {
   content: "";
-  height: 2px; /* تخانة الخط */
-  width: 150px; /* طول الخط */
+  height: 2px; 
+  width: 150px; 
   background: linear-gradient(
     to right,
-    var(--border),
+    var(--main-color),
     transparent
-  ); /* خط بيبدأ تقيل وبيختفي (Fade) */
+  ); 
   display: inline-block;
 }
 .btnsHolder {
@@ -309,11 +315,14 @@ main {
   direction: rtl;
   border-radius: 15px;
 }
-#reviewText {
+#review {
   font-size: 1.2rem;
-  color: #555;
+  color: #000;
   font-style: italic;
   max-height: 80px;
+}
+.nameR{
+  color: #000;
 }
 .controls button {
   background-color: var(--main-color);
@@ -406,6 +415,7 @@ article h2 {
   font-family: "Poppins", sans-serif;
   background: transparent;
   align-items: center;
+  color: var(--font-color);
 }
 .contactSection {
   justify-content: center;
@@ -442,6 +452,7 @@ article h2 {
   background: transparent;
   justify-content: center;
   margin: 0 auto;
+  color: var(--font-color);
 }
 textarea {
   margin: 30px auto;

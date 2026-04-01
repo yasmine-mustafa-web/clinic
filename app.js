@@ -1,8 +1,23 @@
 const btnDark=document.getElementById("btnToggle2");
+const savedTheme = localStorage.getItem("userTheme");
+if (savedTheme=== "dark"){
+    document.body.classList.add("dark");
+    btnDark.textContent="☀️";
+}
 function toggLe(){
     document.body.classList.toggle("dark");
-}
+let theme;
+    if( document.body.classList.contains("dark")){
+    btnDark.textContent="☀️";
+    theme="dark"
 
+    }else{
+         btnDark.textContent="🌙";
+theme="light"
+    }
+    localStorage.setItem("userTheme" , theme)
+
+}
 
 
 const reviews=[{
