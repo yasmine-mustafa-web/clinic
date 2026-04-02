@@ -9,20 +9,15 @@
 
 ​🌟 Key Features
 
-​🩺 Doctors' Directory: Browse professional profiles of doctors, including their specialties and backgrounds.
+​📲 temporary booking : through JavaScript logic.
 
-​📅 Temporary Booking System: A seamless "Express Booking" feature for quick, temporary appointments (using JavaScript logic).
+🩺 doctors' profile : You can know their specialisation,schedule , telephone and their location.
 
-​⭐ Patient Reviews: A dedicated section for user feedback and ratings to build trust.
+🎗 patients' reviews
 
-​📞 Contact & Location: Quick access to clinic phone numbers and integrated maps/addresses.
+⌨️ Connection : You can contact them (I am still working on this tho).
 
-​🎨 Delightful UI/UX: Clean, modern, and engaging interface with smooth transitions and hover effects.
-​🛠 Tech Stack
+⚙️ Tech Stack:
+Front-end: HTML , CSS AND JavaScript including json
 
-​Frontend: HTML5, CSS3 (Custom Flexbox & Grid), JavaScript.
-
-​Functionality: DOM Manipulation for dynamic booking, LocalStorage for temporary data.
-
-​Styling: Responsive design tailored for all screen sizes.
-
+responsive for all screens📲
