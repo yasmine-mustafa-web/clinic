@@ -1,17 +1,18 @@
+# Said Clinic
 
 A website for A clinic
 
-​ Key Features:
+​# Key Features:
 
-​emporary booking : through JavaScript logic.
+T​emporary booking : through JavaScript logic.
 
  doctors' profile : You can know their specialisation,schedule , telephone and their location.
 
- patients' reviews
+ patients' reviews.
 
 Connection : You can contact them (I am still working on this tho).
 
-Tech Stack:
+# Tech Stack:
 Front-end: HTML , CSS AND JavaScript including json
 
 responsive for all screens📲
