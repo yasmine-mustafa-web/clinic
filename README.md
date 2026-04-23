@@ -1,6 +1,6 @@
 # Said Clinic
 
-A website for A clinic
+A website for A clinic.
 
 ​# Key Features:
 
